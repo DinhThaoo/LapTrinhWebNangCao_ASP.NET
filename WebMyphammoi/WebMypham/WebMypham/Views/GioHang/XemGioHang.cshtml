@@ -1,0 +1,72 @@
+﻿@using WebMypham.Models;
+
+@model List<ItemGioHang>
+
+@{
+    ViewBag.Title = "XemGioHang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="main">
+    <div class="main_2">
+        <span>
+            <i class="far fa-square"></i> Sản phẩm
+        </span>
+        <ul>
+            <li>Đơn giá</li>
+            <li>Số lượng</li>
+            <li>Thành tiền</li>
+            <li>Thao tác</li>
+        </ul>
+    </div>
+    <div class="main_3">
+        <span class="main_3_tilte">
+            <i class="fas fa-home main_3_tilte-icon"></i>
+            BeautyShop
+        </span>
+        @foreach (var item in Model)
+        {
+    <span class="main_3_block">
+        <div class="main_3_block_1">
+            <div class="main_3_block_1_img">
+                <i class="main_3_block_1_img-icon"></i>
+             
+                <img src="/Assets/img/@item.HinhAnh" alt="">
+            </div>
+            <div class="main_3_block_1_content">@item.TeSP </div>
+        </div>
+        <div class="main_3_block_2">@item.Giamoi.ToString("#,##")<span>đ</span></div>
+      
+        @using (Html.BeginForm("CapNhatGioHang", "GioHang"))
+        {
+            <input type="hidden" value="@item.SanPhamID" name="ID_SP" />
+            <input class ="soluong"type="number" value="@item.SoLuong" name="soLuongSP" />
+            <input class=" capnhat" type="submit" value="Cập nhật" />
+        }
+        <div style="color: coral;" class="main_3_block_4">@item.ThanhTien.ToString("#,##")<span>đ</span></div>
+        
+        <div class="main_3_block_5"> 
+            <a >@Html.ActionLink("Xóa", "XoaGioHang", new { @MaSP = item.SanPhamID }) </a>
+        </div>
+    </span>
+
+
+        }
+    <span class="main_3_tilte">
+        @{
+            float sum = 0;
+            foreach (var item in Model)
+            {
+                sum +=  (float) item.ThanhTien;
+
+            }
+
+        }
+        <i class="tongtien">Tổng Tiền:   @sum.ToString("#,##")<span>đ</span></i>
+    </span>
+
+    </div>
+</div>
+
+

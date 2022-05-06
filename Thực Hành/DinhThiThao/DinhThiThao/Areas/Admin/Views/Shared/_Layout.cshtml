@@ -1,0 +1,94 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>      <!--Layout trang Admin-->
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="~/Assets/Admin.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="menu">
+        @RenderBody()
+        <nav>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="./index.html" class="activ">trang chủ</a></li>
+                    <li><a href="./gioithieu.html">giới thiệu</a></li>
+                    <li><a href="./sanpham.html" target="_blank">sản phẩm</a></li>
+                    <li><a href="./baby.html" target="_blank">tin tức</a></li>
+                    <li><a href="./lienhe.html" target="_blank">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="nav__log">
+                <ul>
+                    <li><a href="./dangnhap.html" target="_bank">Đăng Nhập</a></li>
+                    <li><a href="./dangki.html" target="_blank">Đăng Kí</a></li>
+
+                    <a href="../html/bag.html"><i class="fa fa-shopping-cart"></i></a>
+                    <i class="fa fa-user-circle user"></i>
+                </ul>
+            </div>
+
+
+        </nav>
+
+    </div>
+
+    <main>
+        <div class="main-con">
+            <div class="user-left">
+                <div class="intro-user">
+                    <div class="img-avt">
+                        <img src="~/Assets/Images/anh (2).jpg" alt="">
+                    </div>
+                    <div class="text-user">
+                        <p>Đinh Thị Thảo</p>
+                        <i class="fa fa-pencil-alt">Sửa hồ sơ</i>
+                    </div>
+                </div>
+
+                <div class="edit-user">
+                    <div class="my-account">
+                        <i class="fa fa-user-circle"></i>
+                        <p>Tài Khoản Của Tôi</p>
+                        <div class="edit-list">
+                            <p>Hồ Sơ</p>
+                            <p>Ngân Hàng</p>
+                            <p>Địa Chỉ</p>
+                            <p>Đổi Mật Khẩu</p>
+                        </div>
+                    </div>
+
+                    <div class="oder">
+                        <i class="fab fa-leanpub"></i>
+                        <p>Danh mục</p>
+                    </div>
+
+                    <div class="notification">
+                        <i class="fab fa-snapchat"></i>
+                        <p>Sản Phẩm</p>
+                    </div>
+
+                    <div class="voucher">
+                        <i class="fa fa-inbox"></i>
+                        <p>Doanh Số</p>
+                    </div>
+                    <div class="coins">
+                        <i class="fa fa-coins"></i>
+                        <p>Lợi Nhuận</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

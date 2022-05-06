@@ -1,0 +1,13 @@
+﻿<!--dùng viewBag để thể hiện tổng số lượng sản phẩm có trong giỏ hàng và tổng tiền-->
+<div class="header__cart" style=" width:200px; ">
+    <div class="header__cart-wrap">
+        <i class="header__cart-icon fas fa-shopping-cart"></i>
+        <span>
+            <a href="@Url.Action("XemGioHang","GioHang")">Giỏ hàng</a>
+        </span>
+    </div>
+    <div class=" hienthisp"  style="font-size:1.3rem; margin-top:2px" >
+        @*<span>@ViewBag.TongTien.ToString("#,##") </span>VNĐ
+        (<span>@ViewBag.TongSoLuong </span> Sản phẩm)*@   
+</div>
+    

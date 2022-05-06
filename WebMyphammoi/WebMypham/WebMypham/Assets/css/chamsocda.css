@@ -1,0 +1,215 @@
+/* .app__container1{
+    background-color:rgb(255, 249, 249);
+} */
+
+.grid1{
+    width: 1200px;
+    margin: 0 auto;
+}
+.grid-size{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+
+}
+
+.home-product1{
+    margin-bottom: 10px;
+   
+}
+
+.home-product__pagination1{
+    margin: 50px auto;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*Phần Slideshow*/
+.slider{
+    width: 1000px;
+    height: 350px;
+    overflow: hidden; /*ẩn chỉ hiện 1*/
+}
+.slides{
+	width: 500%;
+    height: 350px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width:  20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
+    height: 350px;
+}
+/* điều hướng thủ công button  */
+.navigation-manual{
+    position: absolute;
+    width: 70%;
+    margin-top: -29px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #ffff;
+    padding: auto;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+.manual-btn:not(:last-child){ /*cách ra trừ cái cuối*/
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #e85933;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+.navigation-auto div{
+    border: 2px solid #e85933;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-left: 10px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: pink;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: pink;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: pink;
+}
+#radio4:checked ~ .navigation-auto .auto-btn3{
+    background: pink;
+}
+/*Hết phần Slideshow*/
+
+
+/* phần thân 2 */
+.body2{
+    width: auto;
+    height: 854px;
+    background-color:#fff;
+}
+.background{
+    width: auto;
+    height: 900px;
+}
+.explore-title{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 3rem;
+    color: rgb(120, 3, 3);
+    text-transform: uppercase;
+}
+
+.img-skincare img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.img-skincare button{
+    background-color: rgb(223, 105, 135);
+    margin-top:10px;
+    margin-left: 40%;
+    padding: 10px 5px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    border: ridge rgb(243, 191, 191);
+    text-align: center;
+    cursor: pointer;
+}
+
+.img-skincare button:hover{
+    background-color: rgb(214, 157, 157);
+}
+
+/*ảnh sp */
+.form{
+    width: 100%;
+    height: 220px;
+    background-color: rgb(235, 232, 232);
+    display: flex; 
+    padding-left: 2px;
+    margin-top: 20px ;
+}   
+
+/* chia loại */
+.p-skin1{
+    width: 1200px;
+    margin-top: 40px;
+    padding: 10px 2px;
+    font-size: 2.5rem;
+    background-color: rgb(228, 213, 184);
+    text-align: center;
+    color: #a21515ee;
+    font-weight: 700;
+}
+.p-skin2{
+    width: 1200px;
+    margin-top: 40px;
+    padding: 10px 2px;
+    font-size: 2.5rem;
+    background-color: rgb(203, 214, 214) ;
+    text-align: center;
+    color: #631c2cee;
+    font-weight: 700;
+}
+.p-skin3{
+    width: 1200px;
+    margin-top: 40px;
+    padding: 10px 2px;
+    font-size: 2.5rem;
+    background-color: rgb(231, 208, 189);
+    text-align: center;
+    color: #9a0d14ee;
+    font-weight: 700;
+}
+/* xem thêm */
+.add{
+    margin-left: 880px;
+    margin-top: 30px;
+    padding: 10px 60px ;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: rgb(223, 105, 135);
+    color:#fff;
+    border: ridge rgb(243, 191, 191); 
+    cursor: pointer;
+}
+.add:hover{
+    background-color: rgb(214, 157, 157);
+}
+
+    
+

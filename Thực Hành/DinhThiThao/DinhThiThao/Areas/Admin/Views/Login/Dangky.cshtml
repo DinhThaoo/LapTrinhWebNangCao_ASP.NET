@@ -1,0 +1,77 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Dangky</title>
+    <link rel="stylesheet" href="~/Assets/login.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__ovelay"></div>
+        <div class="modal__body">
+            <!--REgister form - Đăng kí-->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng kí</h3>
+                        <a href="~/Views/Login/Dangnhap.cshtml" class="auth-form__switch-btn">Đăng nhập</a>
+                    </div>
+
+                    <!-- ô text -->
+                    <form action="" method="POST" class="form" id="form-1">
+                        <div class="form-group">
+                            <label for="fullname" class="form-label">Tên đầy đủ</label>
+                            <input id="fullname" name="fullname" type="text" placeholder="VD: Đinh Thị Thảo" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" name="email" type="text" placeholder="VD: dinhthao3801@gmail.com" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="form-label">Mật khẩu</label>
+                            <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                            <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+
+                        <button class="form-submit">Đăng ký</button>
+                    </form>
+
+                    <!-- điều khoản  -->
+
+                    <div class="auth-form__soscials">
+                        <a href="" class="auth-form__soscials--facebook btn btn--size-s btn__with-icon">
+                            <i class="auth-form__soscials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__soscials-tittle">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__soscials--google btn btn--size-s btn__with-icon">
+                            <i class="auth-form__soscials-icon fab fa-google"></i>
+                            <span class="auth-form__soscials-tittle">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

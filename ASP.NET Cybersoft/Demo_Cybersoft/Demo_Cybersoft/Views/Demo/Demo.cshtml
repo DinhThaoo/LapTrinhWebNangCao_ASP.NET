@@ -1,0 +1,93 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+Cú pháp RAZOR bài3-chương2, Kiểu là các thẻ form nhưng k cần code form như html cũ mà truyền như này cơ
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Demo</title>
+</head>
+<body>
+    <div>
+
+        @*Tạo thẻ form*@
+        <!--khai báo gọi đến Action Demo bên DemoController-->
+        <!-- khi dùng httpPost thì cần ->   ..using(Html.BeginForm(" Tên Action, "Tên controller", FormMethod.Post, new{..name="form1", ..id="form1", ..onsubmit = "return IsCheck ()"}) )-->
+        <!-- đây là dùng phương thứt httpGet-->
+
+        @using (Html.BeginForm("Demo", "Demo"))
+        {
+            @*Tạo thẻ textbox*@
+            //thẻ input ["type= text"]
+            //là 1 thẻ textbox với cú pháp tạo: ("tên", "giá trị truyền vào", new{ thuộc tính  của html vd @id= id1} )
+            <span>Thẻ TextBox: </span>
+            @Html.TextBox("txtHoTen", "text", new { @id = "id1" })
+
+            <br /> <br />
+
+            //thẻ textArea, dạng khung to to để nhập text vào đó, ví dụ như cmt
+            <span>Thẻ TextArea: </span>
+            @Html.TextArea("txtDiaChi", new { @cols = "20", @rows = "5" })
+
+            <br /> <br />
+
+            //thẻ Password
+            <span>Thẻ Password: </span>
+            @Html.Password("passwordname", "giatrivalue", new { @id = "passwordid" })
+
+            <br /> <br />
+
+            //thẻ Actionlink
+            //"nd hẻ a","điền tên action thực","controller thật vào thì n link sang trang đấy",new @giatri , new@ thuộc tính của thẻ html
+            // ví dụ như bên dưới thì nó sẽ link sang form Index
+            <span>Thẻ Actionlink: </span>
+            @Html.ActionLink("Sang trang Index nè", "Index", "Demo", new { @thamso = "thamso" }, new { @id = "id", @class = "class" })
+
+            <br /> <br />
+
+            //thẻ Hidden
+            <span>Thẻ HIDDEN: </span>
+            @Html.Hidden("txtHidden", "123")
+
+            <br /> <br />
+
+            //thẻ Radiobutton
+            //"name" : để gom nhóm-> cái này check( true) rồi thì cái kia thôi
+            <span>Thẻ RadioButton: </span>
+            @Html.RadioButton("Gioitinh", 0, true) <span>Nam</span>
+            @Html.RadioButton("Gioitinh", 1, false) <span>Nữ</span>
+
+            <br /> <br />
+
+            //thẻ CheckBox
+            <span>Thẻ CheckBox: </span>
+            @Html.CheckBox("TheThao", true, new { @value = "abc" }) <span>Thể thao</span>
+            @Html.CheckBox("Dulich", true, new { @value = "abc" }) <span>Du lịch</span>
+            @Html.CheckBox("Choigame", true, new { @value = "abc" }) <span>Chơi game</span>
+            @Html.CheckBox("Giari trí", true, new { @value = "abc" }) <span>Giari trí</span>
+
+            <br /> <br />
+
+            //thẻ SelectOption
+            <span> Thẻ Select Option</span>
+            SelectList TinhThanhP = (SelectList)ViewBag.TinhThanhPho;
+            <!--<span> Thẻ Select Option</span>..Html.DropDownList("TenDDL", TinhThanhP, new { id="tagSelection" }); chạy k ra hicc-->
+
+            <br /> <br />
+
+            //thẻ listbox
+            <span> Thẻ List Box</span>
+            <!--<span> Thẻ List Box</span>..Html.ListBox("TenDDL", TinhThanhP, new { id = "tagSelection" });-->
+
+            <br /> <br />
+
+            <input type="submit" />
+
+        }
+    </div>
+</body>
+</html>

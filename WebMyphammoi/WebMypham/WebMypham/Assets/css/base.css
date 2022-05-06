@@ -1,0 +1,259 @@
+:root
+{
+    --primary-color:#f14f6f;
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color: #333; 
+    --border-color: #dbdbdb;    
+
+    --header-height:120px;
+    --narbar-height:34px;
+    --star-gold-color:  #FF9900;
+}
+
+*
+{
+    box-sizing: inherit; /*Kế thừa thẻ chứa*/
+}
+
+html
+{
+    /* 16px= 100% = 1rem */
+    /* 62.5%-> 1rem= 12px -> 12px= 1.2rem */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Reponsive*/
+.grid
+{
+    width: 1200px; /*Kích thước màn hình*/
+    max-width: 100%; /*Giảm kích thước grid = kích thước màn hình nhỏ hơn 1200*/
+    margin: 0 auto; /*Căn giữa*/
+    
+}
+
+
+.grid__full-width
+{
+    width: 100%; 
+}
+
+/*Thẻ nằm trong class này sẽ được nằm trên 1 đường ngang*/
+.grid__row
+{
+    display: flex;
+    flex-wrap: wrap; /*Nhảy xuống hàng*/
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/*Test*/
+.grid__column-2
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
+@keyframes fadeIn /*Hiệu ứng hiện lên từ từ*/
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+/* Modal*/
+.modal
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex; /* */
+}
+.modal__ovelay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 , 0, 0 , 0.4);
+    
+}
+.modal__body
+{
+    margin : auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Button style */
+.btn 
+{
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    padding: 0 8px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+}
+
+.btn.btn--normal:hover
+{
+    background-color: rgba(0 , 0, 0 , 0.2);
+}
+
+.btn.btn--size-s
+{
+    height: 29px;
+    font-size: 12px;
+}
+
+.btn.btn--primary
+{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled
+{
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+
+/*Selection*/
+.select-input
+{
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 8px;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.select-input__label
+{
+    font-size: 1.4rem;
+}
+
+.select-input__icon
+{
+    font-size: 1.4rem;
+    color: rgba(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+
+.select-input__list
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+}
+
+.select-input:hover .select-input__list
+{
+    display: block;
+}
+
+.select-input__link
+{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input__link:hover
+{
+    color: var(--primary-color);
+}
+
+/*Pagination*/
+.pagination
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item
+{
+    margin: 0 12px;
+}
+
+.pagination-item__link
+{
+    --height: 30px;
+    display: block;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+
+}
+
+.pagination-item--active .pagination-item__link
+{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover
+{
+    background-color: #FF9900;
+}
+
+.pagination-item--active2 .pagination-item__link:hover
+{
+    background-color: #DDDDDD;
+}

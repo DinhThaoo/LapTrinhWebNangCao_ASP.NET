@@ -1,0 +1,63 @@
+﻿@model WebMypham.Areas.Admin.Model.Sanpham
+
+@{
+    ViewBag.Title = "ChiTietSanPham";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Trang chi tiết sản phẩm -->
+<div class="chitietsanpham">
+    <!-- Sản phẩm  -->
+    <div class="sanpham">
+        <div class="anhsanpham">
+            <div class="anhchinh">
+                <div class="anh" style="background-image: url(/Assets/img/@Model.Hinhanh);"></div>
+            </div>
+            <div>
+                <div class="anhmotathem">
+
+                </div>
+            </div>
+        </div>
+        <div class="noidung">
+            <div class="Tensp">@Model.TeSP</div>
+            <div class="luot">
+                <div class="luotxem">Lượt Xem: </div>
+                <div claas="so"> @Model.Soluongxem</div>
+                <p>|</p>
+                <div class="luotmua">Lượt Mua: </div>
+                <div claas="so"> @Model.Soluongmua </div>
+            </div>
+            <div class="dongia">
+                <p class="gia">ĐƠN GIÁ:</p>
+                <p class="tien"> @Model.Giamoi</p>
+                <p class="d"> vnđ</p>
+            </div>
+
+            <div class="mua">
+                <button type="button" class="themvaogio">
+                <a href="@Url.Action("ThemGioHang", "GioHang", new { @MaSP = Model.SanphamID, @strURL = Request.Url.ToString() }) " style="text-decoration : none; color: black"> Thêm Vào Giỏ Hàng</a>
+                </button>
+                <button type="button" class="muangay">Mua Ngay</button>
+            </div>
+        </div>
+        <div class="chitietsanpham">
+            <p class="chitiet">CHI TIẾT SẢN PHẨM</p>
+            <div class=" mota">
+                MÔ TẢ SẢN PHẨM:
+                <div class="noidungmota">@Model.Mota</div>
+
+            </div>
+            <div class=" thanhphan">
+                THÀNH PHẦN:
+                <p class="tp">@Model.Thanhphan </p>
+            </div>
+            <div class="xuatxu">
+                XUÂT XỨ:
+                <p class="xx">@Model.Nhacungcap.TenNCC</p> 
+            </div>
+
+        </div>
+    </div>
+</div>
+

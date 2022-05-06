@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{623C6921-97F8-42B6-8666-121483892A4F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DinhThiThao</RootNamespace>
+    <AssemblyName>DinhThiThao</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44340</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\DanhMucsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SanPhamsController.cs" />
+    <Compile Include="Areas\Admin\Models\Framework\DangNhap.cs">
+      <DependentUpon>ThucHanhWeb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Admin\Models\Framework\DanhMuc.cs">
+      <DependentUpon>ThucHanhWeb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Admin\Models\Framework\SanPham.cs">
+      <DependentUpon>ThucHanhWeb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Admin\Models\Framework\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ThucHanhWeb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Admin\Models\Framework\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ThucHanhWeb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Admin\Models\Framework\sysdiagrams.cs">
+      <DependentUpon>ThucHanhWeb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Admin\Models\Framework\ThucHanhWeb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThucHanhWeb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Admin\Models\Framework\ThucHanhWeb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThucHanhWeb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Admin\Models\Framework\ThucHanhWeb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThucHanhWeb.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductsModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Models\Framework\ThucHanhWeb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ThucHanhWeb.edmx</DependentUpon>
+      <LastGenOutput>ThucHanhWeb.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Areas\Admin\Models\Framework\ThucHanhWeb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ThucHanhWeb.edmx</DependentUpon>
+      <LastGenOutput>ThucHanhWeb.cs</LastGenOutput>
+    </Content>
+    <Content Include="Assets\Admin.css" />
+    <Content Include="Assets\Images\0aae2ebd7d4568cb577629db0a5c744b.jpg" />
+    <Content Include="Assets\Images\4225b9b34f41d1f718ce6f136ffcf96c.jpg" />
+    <Content Include="Assets\Images\600x600-crop-iphone-12-mini-128gb-xtmobile-c32e1960-40fd-414b-8144-fb8517a9de97.jpg" />
+    <Content Include="Assets\Images\62e166121af858dcea5156c0808250ac.jpg" />
+    <Content Include="Assets\Images\637148518773647407-ss-note10-lite-bac-dd.jpg" />
+    <Content Include="Assets\Images\637170935875912528-ss-s20-ultra-den-1.jpg" />
+    <Content Include="Assets\Images\637230565234443213-ip-se-dd.jpg" />
+    <Content Include="Assets\Images\637311014035020378-ss-a01-core-do-dd.jpg" />
+    <Content Include="Assets\Images\637341201120370331-oppo-reno4-tim-dd-st.jpg" />
+    <Content Include="Assets\Images\637365343617730663-ss-s20-fe-navy-dd.jpg" />
+    <Content Include="Assets\Images\637382656397324891-ip-12-mini-dd.jpg" />
+    <Content Include="Assets\Images\637393169370716242-ip-xr-dd.jpg" />
+    <Content Include="Assets\Images\637393169370871358-ip-11-dd-a26bd5ec-b31e-444d-8021-3bd4157d9e4e.jpg" />
+    <Content Include="Assets\Images\637393169370871358-ip-11-dd.jpg" />
+    <Content Include="Assets\Images\637424982825011268-oppo-a12-dd-1.jpg" />
+    <Content Include="Assets\Images\a233de7dca2fbff7bbc6f8476e6ba7bf-56e2b026-8f61-4973-a17a-5a75ba5ec444.jpg" />
+    <Content Include="Assets\Images\adapter-sac-type-c-20w-cho-iphone-ipad-apple-mhje3-ava-600x600.png" />
+    <Content Include="Assets\Images\anh %282%29.jpg" />
+    <Content Include="Assets\Images\asus-zendbook.jpg" />
+    <Content Include="Assets\Images\ban-phim-magic-keyboard-ipad-pro-11-mxqt2za-a-152520-0925240227100-600x600%281%29.jpg" />
+    <Content Include="Assets\Images\ban-phim-magic-keyboard-ipad-pro-11-mxqt2za-a-152520-0925240227100-600x600.jpg" />
+    <Content Include="Assets\Images\ban-phim-magic-keyboard-ipad-pro-12-9-mxqu2za-a-183620-023656-227101-600x600.jpg" />
+    <Content Include="Assets\Images\ban-phim-smart-keyboard-ipad-pro-11-us-apple-mu8g2-10-215904-600x600%281%29.jpg" />
+    <Content Include="Assets\Images\ban-phim-smart-keyboard-ipad-pro-11-us-apple-mu8g2-10-215904-600x600.jpg" />
+    <Content Include="Assets\Images\cao-cap.jpg" />
+    <Content Include="Assets\Images\ccb55bb56f5b384e2819486a76922aad.jpg" />
+    <Content Include="Assets\Images\computer.png" />
+    <Content Include="Assets\Images\cpu.png" />
+    <Content Include="Assets\Images\dell-xps.jpg" />
+    <Content Include="Assets\Images\e7c53b0158b775d555988491b01d1103.jpg" />
+    <Content Include="Assets\Images\evo_block_product_banner_2.jpg" />
+    <Content Include="Assets\Images\evo_block_product_banner_3.jpg" />
+    <Content Include="Assets\Images\f0a3bf16c58311fe86ae3695df95ae4d.jpg" />
+    <Content Include="Assets\Images\f9fb4ffcd5f8a9ab04f5691d59bb6548.jpg" />
+    <Content Include="Assets\Images\fa9543e473968692e579b66919286887.jpg" />
+    <Content Include="Assets\Images\fae8f5b23dfe0cb37e68d0795e0e77d9.jpg" />
+    <Content Include="Assets\Images\feature_banner.jpg" />
+    <Content Include="Assets\Images\feature_banner_1.jpg" />
+    <Content Include="Assets\Images\feature_banner_2.jpg" />
+    <Content Include="Assets\Images\galaxy-s21-cho-dat-truoc-tai-viet-nam-gia-vuot-moc-30-trieu-dong-600x400.jpg" />
+    <Content Include="Assets\Images\galaxy-z-fold2-5g-1-da9cf703-d4eb-49c8-bb44-4b8c7a5d4c64.jpg" />
+    <Content Include="Assets\Images\gaming.jpg" />
+    <Content Include="Assets\Images\house.png" />
+    <Content Include="Assets\Images\index-cate-icon-1.svg" />
+    <Content Include="Assets\Images\index-cate-icon-2.svg" />
+    <Content Include="Assets\Images\index-cate-icon-3.svg" />
+    <Content Include="Assets\Images\index-cate-icon-4.svg" />
+    <Content Include="Assets\Images\index-cate-icon-5.svg" />
+    <Content Include="Assets\Images\index-cate-icon-6.svg" />
+    <Content Include="Assets\Images\index-cate-icon-7.svg" />
+    <Content Include="Assets\Images\index-cate-icon-8.svg" />
+    <Content Include="Assets\Images\iphone-12-mau-xanh-navy-co-the-tro-thanh-hot-trend-ngay-khi-ra-mat-2.jpg" />
+    <Content Include="Assets\Images\iphone-12-pro-max-xanh-duong-new-600x600-600x600-d4f1f529-b76d-4a27-b5fb-671f597248f9.jpg" />
+    <Content Include="Assets\Images\iphone-12-va-air-pod-3.jpg" />
+    <Content Include="Assets\Images\iphone-12-xanh-duong-new-600x600-600x600-1ee001de-287b-4cd1-af62-bd46227174cf.jpg" />
+    <Content Include="Assets\Images\iphone.png" />
+    <Content Include="Assets\Images\laptop-asus-zenbook-ux425j-2.jpg" />
+    <Content Include="Assets\Images\laptop.png" />
+    <Content Include="Assets\Images\lenovo-thinkpad-t490s.jpg" />
+    <Content Include="Assets\Images\lidar-la-gi-1603863491.jpg" />
+    <Content Include="Assets\Images\logo.png" />
+    <Content Include="Assets\Images\macbook-pro-16-touch-bar-2-6ghz-512gb-2019-1-2.jpg" />
+    <Content Include="Assets\Images\macbook.jpg" />
+    <Content Include="Assets\Images\map.jpg" />
+    <Content Include="Assets\Images\mega-1-image.jpg" />
+    <Content Include="Assets\Images\microsoft-surface-go-600x600.jpg" />
+    <Content Include="Assets\Images\ne-12-pro-max-huge-iphone-12-pro-max-5g-d-1587230688-width660height440-efe7ee07f24c44d982a10c6458b838f1-grande.jpg" />
+    <Content Include="Assets\Images\newsbeezer-600x400.jpg" />
+    <Content Include="Assets\Images\news_update_icon.svg" />
+    <Content Include="Assets\Images\oppo-reno5-trang-600x600-1-600x600.jpg" />
+    <Content Include="Assets\Images\payment_1.svg" />
+    <Content Include="Assets\Images\payment_2.svg" />
+    <Content Include="Assets\Images\payment_3.svg" />
+    <Content Include="Assets\Images\payment_4.svg" />
+    <Content Include="Assets\Images\payment_5.svg" />
+    <Content Include="Assets\Images\payment_6.svg" />
+    <Content Include="Assets\Images\pin-iphone-12-pro-max-1605322295.jpg" />
+    <Content Include="Assets\Images\power-bank-c0e5ea32-a686-46e4-82df-036294674c13.png" />
+    <Content Include="Assets\Images\slider_2.jpg" />
+    <Content Include="Assets\Images\slider_3.jpg" />
+    <Content Include="Assets\Images\slider_5.jpg" />
+    <Content Include="Assets\Images\slider_6.jpg" />
+    <Content Include="Assets\Images\slider_7.jpg" />
+    <Content Include="Assets\Images\slider_8.jpg" />
+    <Content Include="Assets\Images\speaker-73fa354a-a248-4c08-836f-cd13374624f3.png" />
+    <Content Include="Assets\Images\tablet-computer.png" />
+    <Content Include="Assets\Images\untitled-2-8b532638-7b1b-4097-9433-e404fc95f83d.jpg" />
+    <Content Include="Assets\Images\untitled-2.jpg" />
+    <Content Include="Assets\Images\watch.png" />
+    <Content Include="Assets\Images\xps-13-9310.jpg" />
+    <Content Include="Assets\login.css" />
+    <Content Include="Assets\main.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Login\Dangnhap.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Dangky.cshtml" />
+    <EntityDeploy Include="Areas\Admin\Models\Framework\ThucHanhWeb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ThucHanhWeb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Areas\Admin\Models\Framework\ThucHanhWeb.edmx.diagram">
+      <DependentUpon>ThucHanhWeb.edmx</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucs\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucs\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucs\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucs\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucs\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Index.cshtml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Slider.cshtml" />
+    <Content Include="Views\Shared\TableProduct.cshtml" />
+    <Content Include="Views\Shared\Product.cshtml" />
+    <Content Include="Views\Shared\Banner.cshtml" />
+    <Content Include="Views\Shared\FeaturedProducts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\DAO\" />
+    <Folder Include="Areas\Admin\Models\DTO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60216</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44340/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,36 @@
+#anh {
+    position: relative;
+    left: 400px;
+    border-radius: 10px;
+    width: 440px;
+    height: 374px;
+}
+
+#login {
+    position: absolute;
+    top: 67px;
+    left: 560px;
+    font-size: 30px;
+    color: cornflowerblue;
+}
+
+.card-body {
+    position: absolute;
+    top: 135px;
+    left: 500px;
+    color: navy;
+}
+
+span {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    position: absolute;
+    left: 140px;
+    top: 100px;
+}

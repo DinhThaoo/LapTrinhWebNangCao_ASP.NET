@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="~/Assets/login.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__ovelay"></div>
+        <div class="modal__body">
+            <!--Login form - Đăng nhập-->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <a href="~/Views/Login/Dangky.cshtml" class="auth-form__switch-btn">Đăng kí</a>
+                    </div>
+
+                    <div class="group">
+                        <label> Tài Khoản: </label>
+                        <input id="taikhoan" type="text" placeholder="Vui lòng nhập tài khoản của bạn" name="Tài khoản">
+                        <span id="error__tk"></span>
+                    </div>
+
+                    <div class="group">
+                        <label> Mật Khẩu: </label>
+                        <input id="matkhau" type="password" placeholder="Vui lòng nhập mật khẩu của bạn" name="Mật khẩu">
+                        <span id="error__mk"></span>
+                    </div>
+
+                    <div class="group-kt">
+                        <input type="checkbox" class="check">
+                        <label> Ghi nhớ tài khoản</label>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <div class="clear"></div>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="group__active">
+                        <button id="btn__login" type="submit"> Đăng nhập</button>
+                    </div>
+
+                    <div class="auth-form__soscials">
+                        <a href="" class="auth-form__soscials--facebook btn btn--size-s btn__with-icon">
+                            <i class="auth-form__soscials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__soscials-tittle">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__soscials--google btn btn--size-s btn__with-icon">
+                            <i class="auth-form__soscials-icon fab fa-google"></i>
+                            <span class="auth-form__soscials-tittle">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

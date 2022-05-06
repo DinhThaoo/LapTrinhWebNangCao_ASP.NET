@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANG CHỦ</title>
+    <link rel="stylesheet" href="~/Assets/main.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="nav">
+                <img src="~/Assets/Images/logo.png">
+                <a href=""> TRANG CHỦ</a>
+                <a href=""> GIỚI THIỆU </a>
+                <a href=""> SẢN PHẨM </a>
+                <a href=""> TIN TỨC </a>
+                <a href=""> HỎI ĐÁP </a>
+                <a href=""> LIÊN HỆ </a>
+             </div>
+            <div class="search">
+                <p id="danhmuc"> DANH MỤC</p>
+                <input type="text"placeholder="Bạn cần tìm gì?"/>
+                <div id="left-search">
+                    <p>Tài khoản</p>
+                    <p>Giỏ hàng</p>
+                </div>
+            </div>
+        </div>
+        @RenderBody() <!-- gán vào để chạy ở index-->
+
+        
+
+        <div id="footer">
+            <div id="thongtinlh">
+                <ul>
+                    <li id="tieude">Thông tin liên hệ</li>
+                    <li>Địa chỉ: 70 Lu Gia, Ward 15, District 11, <br/>Ho Chi Minh City </li>
+                    <li>Điện thoại: 19006750</li>
+                </ul>
+            </div>
+            <div id="thongtinkhac">
+                <ul>
+                    <li id="tieude">Thông tin khác</li>
+                    <li>Quy chế hoạt động</li>
+                    <li>Chính sách bảo hành</li>
+                    <li>Liên hệ hợp tác kinh doanh</li>
+                </ul>
+            </div>
+            <div id="hotro">
+                <ul>
+                    <li id="tieude">Hỗ trợ khách hàng</li>
+                    <li>Mua hàng thanh toán Online</li>
+                    <li>Mua hàng trả góp Online</li>
+                    <li>Tra thông tin đơn hàng</li>
+                    <li>Gọi tư vấn khiếu nại</li>
+                </ul>
+            </div>
+            <div id="goi">
+                <ul>
+                    <li id="tieude">Gọi tư vấn & khiếu nại</li>
+                    <li>Gọi mua hàng: 1800.1800</li>
+                    <li>Gọi khiếu nại: 1800.1800</li>
+                    <li>Gọi bảo hành: 1800.1800</li>
+                </ul>
+            </div>  
+        </div>
+
+    </div>
+        
+
+</body>
+</html>

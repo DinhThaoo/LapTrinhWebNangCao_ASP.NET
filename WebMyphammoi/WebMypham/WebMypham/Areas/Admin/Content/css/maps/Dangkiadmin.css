@@ -1,0 +1,31 @@
+#anhnen {
+    position: relative;
+    left: 360px;
+    border-radius: 10px;
+    width: 600px;
+    height: 440px;
+}
+
+.card-title {
+    position: absolute;
+    top: 30px;
+    left: 600px;
+    font-size: 30px;
+    color: cornflowerblue;
+}
+
+.card-body {
+    position: absolute;
+    top: 10px;
+    left: 180px;
+}
+
+span {
+    color: red;
+}
+
+.form-horizontal {
+    position: absolute;
+    top: 10px;
+    left: 420px;
+}

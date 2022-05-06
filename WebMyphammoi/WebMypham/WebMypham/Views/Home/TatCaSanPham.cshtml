@@ -1,0 +1,179 @@
+﻿@using WebMypham.Areas.Admin.Model;
+
+@{
+    ViewBag.Title = "TatCaSanPham";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Sanpham> listSanPham = ViewBag.SanPham;
+    List<Sanpham> listDaDau = ViewBag.DaDau;
+    List<Sanpham> listDaThuong = ViewBag.DaThuong;
+    List<Sanpham> listDaKho = ViewBag.DaKho;
+}
+
+
+<!--Phần banner-->
+@section banner{
+    <div class="app__container">
+        <!-- Slideshow -->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <img src="~/Assets/img/img1-trangchu.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="~/Assets/img/slide2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="~/Assets/img/slide3.jpg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+}
+
+<!--Sắp xếp-->
+@section sapxeptatcasanpham{
+    <div class="home-filter">
+        <span class="home-filter__label">Sắp xếp theo</span>
+        <button class="home-filte__btn btn btn--primary ">Tất cả sản phẩm</button>
+        <button class="home-filte__btn btn"><a class=" sapxep1" href="SanPhamMoiNhat">Mới nhất</a></button>
+        <button class="home-filte__btn btn"><a class=" sapxep1" href="SanPhamBanChay">Bán chạy</a></button>
+    </div>
+}
+
+<div class="home-product">
+    <div class="grid__row">
+        @foreach (var item in listSanPham)
+        {
+            <div class="grid__column-2-4">
+                <a class="home-product-item" href="@Url.Action("ChiTietSanPham","Home",new { id = item.TeSP}) ">
+                    <div class="home-product-item__img" style="        background-image: url(/Assets/img/@item.Hinhanh);"></div>
+                    <h4 class="home-product-item__name">@item.TeSP</h4>
+                    <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">@item.Giacu.ToString("#,##")<span>đ</span></span>
+                        <span class="home-product-item__price-current">@item.Giamoi.ToString("#,##")<span>đ</span></span>
+                    </div>
+                    <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked">
+                            <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                            <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <a class="home-product-item__sold" href="@Url.Action("ThemGioHang", "GioHang", new { @MaSP = item.SanphamID, @strURL = Request.Url.ToString() }) "> THÊM VÀO GIỎ HÀNG</a>
+                    </div>
+                    <div class="home-product-item__origin">
+                        <span class="home-product-item__origin-name">@item.Nhacungcap.TenNCC</span>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+<p class=p-skin1>SẢN PHẨM DÀNH CHO DA DẦU</p>
+<div class="home-product">
+    <div class="grid__row">
+        @foreach (var item in listDaDau)
+        {
+            <div class="grid__column-2-4">
+                <a class="home-product-item" href="@Url.Action("ChiTietSanPham","Home",new { id = item.TeSP}) ">
+                    <div class="home-product-item__img" style="        background-image: url(/Assets/img/@item.Hinhanh);"></div>
+                    <h4 class="home-product-item__name">@item.TeSP</h4>
+                    <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">@item.Giacu.ToString("#,##")<span>đ</span></span>
+                        <span class="home-product-item__price-current">@item.Giamoi.ToString("#,##")<span>đ</span></span>
+                    </div>
+                    <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked">
+                            <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                            <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <a class="home-product-item__sold" href="@Url.Action("ThemGioHang", "GioHang", new { @MaSP = item.SanphamID, @strURL = Request.Url.ToString() }) "> THÊM VÀO GIỎ HÀNG</a>
+                    </div>
+                    <div class="home-product-item__origin">
+                        <span class="home-product-item__origin-name">@item.Nhacungcap.TenNCC</span>
+                    </div>
+                </a>
+            </div>
+        }
+        <button class="add"> <a class="xemthem" href=" SanPhamMoiNhat"> XEM THÊM...</a></button>
+    </div>
+</div>
+
+
+<p class=p-skin2>SẢN PHẨM DANH CHO DA THƯỜNG</p>
+<div class="home-product">
+    <div class="grid__row">
+        @foreach (var item in listDaThuong)
+        {
+            <div class="grid__column-2-4">
+                <a class="home-product-item" href="@Url.Action("ChiTietSanPham","Home",new { id = item.TeSP}) ">
+                    <div class="home-product-item__img" style="        background-image: url(/Assets/img/@item.Hinhanh);"></div>
+                    <h4 class="home-product-item__name">@item.TeSP</h4>
+                    <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">@item.Giacu.ToString("#,##")<span>đ</span></span>
+                        <span class="home-product-item__price-current">@item.Giamoi.ToString("#,##")<span>đ</span></span>
+                    </div>
+                    <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked">
+                            <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                            <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <a class="home-product-item__sold" href="@Url.Action("ThemGioHang", "GioHang", new { @MaSP = item.SanphamID, @strURL = Request.Url.ToString() }) "> THÊM VÀO GIỎ HÀNG</a>
+                    </div>
+                    <div class="home-product-item__origin">
+                        <span class="home-product-item__origin-name">@item.Nhacungcap.TenNCC</span>
+                    </div>
+                </a>
+            </div>
+        }
+        <button class="add"> <a class="xemthem" href=" SanPhamBanChay"> XEM THÊM...</a></button>
+
+    </div>
+</div>
+
+
+<p class=p-skin3>SẢN PHẨM DÀNH CHO DA KHÔ</p>
+<div class="home-product">
+    <div class="grid__row">
+        @foreach (var item in listDaKho)
+        {
+            <div class="grid__column-2-4">
+                <a class="home-product-item" href="@Url.Action("ChiTietSanPham","Home",new { id = item.TeSP}) ">
+                    <div class="home-product-item__img" style="        background-image: url(/Assets/img/@item.Hinhanh);"></div>
+                    <h4 class="home-product-item__name">@item.TeSP</h4>
+                    <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">@item.Giacu.ToString("#,##")<span>đ</span></span>
+                        <span class="home-product-item__price-current">@item.Giamoi.ToString("#,##")<span>đ</span></span>
+                    </div>
+                    <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked">
+                            <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                            <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <a class="home-product-item__sold" href="@Url.Action("ThemGioHang", "GioHang", new { @MaSP = item.SanphamID, @strURL = Request.Url.ToString() }) "> THÊM VÀO GIỎ HÀNG</a>
+                    </div>
+                    <div class="home-product-item__origin">
+                        <span class="home-product-item__origin-name">@item.Nhacungcap.TenNCC</span>
+                    </div>
+                </a>
+            </div>
+        }
+        <button class="add"> <a class="xemthem" href=" SuaRuaMat"> XEM THÊM...</a></button>
+
+    </div>
+</div>

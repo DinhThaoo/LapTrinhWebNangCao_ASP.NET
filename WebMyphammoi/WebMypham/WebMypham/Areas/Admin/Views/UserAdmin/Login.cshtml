@@ -1,0 +1,36 @@
+﻿@model WebMypham.Areas.Admin.Model.User
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row justify-content-md-center">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <img src="~/Areas/Admin/Content/images/anhdn.png" id="anh">
+                <div class="card-title">Đăng nhập</div>
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm("Login", "UserAdmin", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Email)
+                        @Html.TextBoxFor(m => m.Email, "", new { @class = "form-control", @placeholder = "Email" })
+
+                    </div> <br />
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+                    </div><br />
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-primary" value="Login" />
+                    </div>
+                }
+                <link href="~/Areas/Admin/Content/css/maps/Dangnhapadmin.css" rel="stylesheet">
+            </div>
+        </div>
+    </div>
+</div>

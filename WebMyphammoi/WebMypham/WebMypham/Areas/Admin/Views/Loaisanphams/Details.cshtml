@@ -1,0 +1,43 @@
+﻿@model WebMypham.Areas.Admin.Model.Loaisanpham
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Loaisanpham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tenloaisp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tenloaisp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Thongtin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Thongtin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.logo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LoaisanphamID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

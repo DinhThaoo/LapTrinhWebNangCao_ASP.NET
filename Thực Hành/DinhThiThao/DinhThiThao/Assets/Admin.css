@@ -1,0 +1,151 @@
+﻿/* ALL */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: black;
+    background-color: white;
+    font-family: "Asap Condensed", sans-serif;
+}
+
+html {
+    font-size: 16px;
+   
+    letter-spacing: 1px;
+}
+
+.clear {
+    clear: both;
+}
+/* HEADER */
+.menu {
+    background-color: darkcyan;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top: -10px;
+    z-index: 1;
+    line-height: 30px;
+}
+
+.menu nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.menu nav ul {
+  list-style: none;
+  padding: 20px;
+ 
+}
+.menu ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+.menu ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 5px;
+  transition: all 0.5s;
+}
+.menu ul li a:hover {
+  color: #ff0083;
+}
+.menu nav .nav__log {
+  justify-self: self-end;
+}
+.menu nav .nav__log ul {
+  margin-left: 100px;
+  margin-right: -80px;
+}
+.nav__log ul i {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #43a047;
+  padding: 0 20px;
+}
+.nav__log ul .user {
+  color: #ff5722;
+}
+
+main{
+    padding: 100px 0;
+    background-color: #f1f8e9;
+}
+.main-con{
+    display: flex;
+    margin: 0 70px;
+    background-color:honeydew;
+    height:600px;
+ 
+}
+.user-left {
+    margin-right: 100px;
+    background-color: gainsboro;
+    width: 280px;
+}
+.user-left .intro-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    
+}
+.user-left .intro-user .img-avt{
+    width: 80px;
+    height: 80px;
+    
+}
+.user-left .intro-user .img-avt img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.user-left .intro-user .text-user{
+    padding: 0 0 0 10px;
+}
+.user-left .intro-user .text-user p{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.user-left .intro-user .text-user i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.274);
+}
+.user-left .edit-user{
+    margin: 27px 0 0;
+}
+.edit-user i{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #f4511e;
+}
+
+
+.edit-user  p{
+    display: inline;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.edit-user p:hover{
+    color: #f4511e;
+}
+.edit-user .edit-list{
+    padding-left: 48px;
+    padding-bottom: 8px;
+}
+.edit-user .edit-list p{
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 15px;
+}

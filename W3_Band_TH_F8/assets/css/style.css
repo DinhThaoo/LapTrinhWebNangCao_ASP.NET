@@ -1,0 +1,68 @@
+/* Reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif; /* thay đổi font chữ sang k chân*/
+} 
+
+/* phải xác định ngay từ đầu 
+1. vị trí của nó
+2. kích thước 
+3 màu sắc
+4 kiểu dáng : tròn, vuông, kiểu chữ
+
+**** 
+1. từ ngoài vào trong
+2. từ trên xuống dưới
+3. từ tổng quan đến chi tiết 
+*/
+
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+
+}
+#nav{
+
+}
+#nav li{
+    display: inline-block; /*thành 1 hàng ngang*/
+}
+
+#nav li a{
+    color:#fff;
+    text-decoration: none; /*bỏ gạch chân chữ*/
+    line-height: 46px; /*chiều cao của DÒNG chữ*/
+    padding: 0 24px;  /*cách nhau ra 24px*/
+    display: inline-block; /* cho kt khi hover cảu thẻ a nó to lên, vì thẻ a bth k set đc kt, làm thế n sẽ ăn theo light-height*/
+
+}
+#nav li:hover a{  /* con thằng li là a sẽ đc hover*/
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display:none;  /*ẩn đi*/
+}
+
+
+#slider{
+
+}
+
+#content{
+
+}
+
+#footer{
+
+}

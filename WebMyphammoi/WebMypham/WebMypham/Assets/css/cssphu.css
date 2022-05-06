@@ -1,0 +1,249 @@
+﻿
+/*tìm kiếm */
+.header__search {
+    flex: 1;
+    height: 50px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.header__search-input {
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding: 0 16px;
+    width: 739px;
+    border-radius: 3px;
+}
+
+.header__search-input-wrap {
+    flex: 1;
+    display: flex;
+    height: 50px;
+    width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__search-btn {
+    background-color: var(--primary-color);
+    border: none;
+    height: 40px;
+    width: 60px;
+    border-radius: 3px;
+    margin-right: 3px;
+    margin-left: 0px;
+    outline: none;
+    margin-top: 5px;
+}
+
+
+/*trang chi tiết sản phẩm*/
+.chitietsanpham {
+    margin-left: 2px;
+    margin-bottom: 20px;
+    width: 1150px;
+    background-color: rgb(243, 241, 241);
+}
+
+.themvaogio:hover {
+    cursor: pointer;
+    background-color: #FF9933;
+}
+
+.muangay:hover {
+    cursor: pointer;
+    background-color: #f67559;
+}
+
+
+/*sản phẩm*/
+.sapxep1 {
+    text-decoration: none;
+}
+
+.home-product-item {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #f2f0f0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 0px 0px 0 rgb(0 0 0 / 10%);
+    will-change: transform;
+}
+
+.home-product-item__action {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 1px 0px 0px;
+    background-color: #f2f0f0;
+}
+
+.home-product-item__sold {
+    padding: 6px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--primary-color);
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    margin-right: -1px;
+    text-decoration: none;
+    box-shadow: 0 0px 0px 0 rgb(0 0 0 / 10%);
+}
+
+.home-product-item__origin {
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    padding-top: 3 px;
+    color: #595959;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: #f2f0f0;
+    box-shadow: 0 3px 2px 0 rgb(0 0 0 / 10%);
+}
+
+.home-product-item__like {
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+.home-product-item__price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding-bottom: 7px;
+}
+
+.p-skin1 {
+    margin-top: 40px;
+    padding: 10px 2px;
+    font-size: 2.5rem;
+    background-color: rgb(242 182 65);
+    text-align: center;
+    color: #291919;
+    font-weight: 700;
+}
+
+.p-skin2 {
+    margin-top: 40px;
+    padding: 10px 2px;
+    font-size: 2.5rem;
+    background-color: rgb(192 226 255);
+    text-align: center;
+    color: #631c2cee;
+    font-weight: 700;
+}
+
+.p-skin3 {
+    margin-top: 40px;
+    padding: 10px 2px;
+    font-size: 2.5rem;
+    background-color: rgb(232 194 166);
+    text-align: center;
+    color: #9a0d14ee;
+    font-weight: 700;
+}
+
+.add {
+    margin-left: 400px;
+    margin-top: 30px;
+    padding: 10px 60px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: rgb(107 148 164);
+    color: #fff;
+    border: ridge rgb(243, 191, 191);
+    cursor: pointer;
+}
+
+.xemthem {
+    text-decoration: none;
+    color: white;
+}
+
+/*sức khỏe và sắc đẹp*/
+.title {
+    width: 1200px;
+    height: 330px;
+    margin-top: 45px;
+    margin-left: 190px;
+    background-color: rgb(186, 230, 150);
+}
+
+/*giỏ hàng*/
+.main_2 ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 43px;
+    color: black;
+}
+
+.soluong {
+    margin-left: 20px;
+}
+
+.main_3_block_2 {
+    margin-left: 177px;
+    font-size: 1.6rem;
+    margin-right: -13px;
+    position: relative;
+    top: 45px;
+    padding: 0 17px;
+    color: var(--text-color);
+    width: 108px;
+}
+
+.soluong {
+    width: 50px;
+    height: 20px;
+    margin: 34px -15px 0px 61px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.capnhat {
+    margin: 10px 0px 0px 54px;
+    cursor: pointer;
+    height: 22px;
+    font-size: 13px;
+}
+
+    .capnhat:hover {
+        background-color: #fe9191;
+    }
+
+.main_3_block_4 {
+    margin-left: -25px;
+    font-size: 1.7rem;
+    margin-right: 4px;
+    position: relative;
+    top: 45px;
+    padding: 0 17px;
+}
+
+    .main_3_block_4 :hover {
+        cursor: pointer;
+    }
+
+.soluong1 {
+    margin-left: 10px;
+}
+
+.tongtien{
+    color:red;
+    font-size: 17px;
+}
+.home-product-item__price-current {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-left: 50px;
+}

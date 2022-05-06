@@ -1,0 +1,136 @@
+body
+{
+    font-size: 1.4rem;
+    color: #2e2c2c;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.menu_top
+{
+    background-image: linear-gradient(0, #FF9900, #FF6600);
+    height: 50px;
+}
+
+.banner
+{
+    background-color: rgb(236, 236, 236);
+    height: auto;
+    width: 1000px;
+}
+
+.left
+{
+    width: 740px;
+    float: left;
+    min-height: 400px;
+}
+
+.right
+{
+    width: 240px;
+    background-image: linear-gradient(0, #FFCC99, #FFCC66);
+    float: left;
+    min-height: 400px;
+    margin-left: 20px;
+}
+
+.footer
+{
+    clear: left;
+}
+
+.menu_top ul
+{
+    margin: 0px;
+    padding: 0;
+}
+
+.menu_top ul li
+{
+    list-style: none;
+    float: left;
+}
+
+.menu_top ul li a
+{
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: var(--text-color);
+    padding: 0px 17.45px;
+    border-right: 1px solid #ccc;
+}
+
+.active
+{
+    background-image: linear-gradient(0, #FF0000, #DD0000);
+}
+
+.banner img
+{
+    width: 100%;
+}
+
+.main .left ul
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main .left ul li
+{
+    list-style: none;
+    clear: left;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    margin-bottom: 20px;    
+}
+
+.main .left  ul li img
+{
+
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 90px;
+    height:90px;
+
+}
+
+.main .left ul li h2
+{
+    font-size: 2rem;
+    margin-top: 0;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.main .left ul li h3
+{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text-color); 
+}
+
+.main
+{
+    margin-top: 20px;
+}
+
+.main .right .menu_right ul
+{
+    margin-left: 20px;
+    padding: 0;
+}
+.main .right .menu_right h3
+{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    padding: 12px 16px;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(216, 213, 213, 0.438);
+}

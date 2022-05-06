@@ -1,0 +1,19 @@
+﻿
+@model MyASPMVC.Models.MyModel
+<!-- B3 khai báo  model mình mới tạo ra đây thì n mới chạy đúng model đó-->
+@{
+    ViewBag.Title = "About";
+}
+<h1>@Model.NAME</h1>   <!--B4 lấy cho nó in ra-->
+<h1>@Model.PHONE</h1>
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>@ViewBag.ThuocTinhA <br/>   <!--B viewbag -> khai báo vào để in ra -->
+   @ViewBag.ThuocTinhB  <br/>
+
+    @ViewBag.OB.NAME <br/>    <!-- lấy từ model ra theo kiểu ViewBag-->
+    @ViewBag.OB.PHONE
+</p>
+
+<p>Use this area to provide additional information.</p>

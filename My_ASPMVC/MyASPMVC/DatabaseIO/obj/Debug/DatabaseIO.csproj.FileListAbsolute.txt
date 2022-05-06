@@ -1,0 +1,15 @@
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\DatabaseIO.dll
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\DatabaseIO.pdb
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\DatabaseProvider0.dll
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\EntityFramework.dll
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\DatabaseProvider0.pdb
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\DatabaseProvider0.dll.config
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\EntityFramework.xml
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\obj\Debug\DatabaseIO.dll
+C:\Users\THAO\Documents\Lập Trình Web Nâng Cao\My_ASPMVC\MyASPMVC\DatabaseIO\obj\Debug\DatabaseIO.pdb

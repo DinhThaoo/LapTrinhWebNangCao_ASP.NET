@@ -1,0 +1,191 @@
+
+/* CSKH */
+.cskh{
+   
+    width: 80%;
+    margin: 5px auto;
+    background-color: rgb(250, 248, 248);
+}
+.cskh .help{
+    background-color: rgb(248, 175, 180);
+    height: 330px;
+    width: 100%;
+    position: relative;
+}
+.cskh .content{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    
+}
+.cskh .content h2{
+    font-size: 4rem;
+    color:#333;
+    font-weight: 500;
+    
+}
+.cskh .content input{
+    height: 60px;
+    width: 800px;
+    outline: none;
+    border: 1px solid white;
+    font-size: 1.4rem;
+}
+.cskh .content .search{
+    position: absolute;
+    bottom: 10%;
+    right: 20px;
+    cursor: pointer;
+
+}
+.cskh .content .search i{
+    font-size: 2rem;
+    
+    transition: all .5s;
+    color: rgba(0, 0, 0, 0.692) !important;
+}
+.cskh .content .search i:hover{
+    font-size: 2.2rem;
+    transform: translate(-10%,-15%);
+}
+
+.cskh .question{
+    margin: 40px 0;
+}
+
+.cskh .question h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.cskh .question .qs-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+}
+.cskh .question .qs-content ul{
+    list-style-position: inside;
+}
+.cskh .question .qs-content ul li{
+   padding: 10px 10px 10px 15px;
+   
+}
+.cskh .question .qs-content ul li::marker{
+    font-size: 1.5rem;
+}
+.cskh .question ul li a{
+   
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #202020;
+    transition: all .5s;
+}
+.cskh .question ul li a:hover{
+    color: #e2224c;
+}
+
+
+.cskh .theme .theme-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.cskh .theme h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.cskh .theme .theme-content .item{
+    border: 1px solid #ced4da !important;
+    border-radius: 9px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition: all .5s;
+    background-color: rgb(255, 179, 179);
+}
+.cskh .theme .theme-content .item i {
+    padding: 0px;
+    font-size: 4rem;
+    line-height: 175px;
+    color: #3e2723;
+}
+.cskh .theme .theme-content .item p{
+    font-size: 1.5rem;
+}
+
+.cskh .theme .theme-content .item:hover{
+    background-color: #f6f6f6;
+    opacity: 0.6;
+}
+.cskh .theme .theme-content .item i:hover{
+    font-size: 4.5rem;
+    transform: translate(-10px,10px);
+}
+
+
+
+.cskh .like-dis{
+    margin: 50px 0;
+}
+.cskh .like-dis h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.cskh .like-dis p{
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 5px 0;
+}
+.cskh .like-dis .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.cskh .like-dis .btn button{
+    padding: 15px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    color: #333;
+    border: 1px solid #e78e8e;
+    background-color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 6px;
+    outline: none;
+}
+.cskh .like-dis .btn .active{
+    color :white;
+    background-color: #ff9d9d;
+}
+.cskh .like-dis .btn button:hover{
+    opacity: .8;
+}
+.cskh .like-dis .l-d{
+    width: 80%;
+    margin: 50px auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.315);
+}
+.cskh .like-dis .l-d p{
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.cskh .like-dis .l-d .icon{
+    text-align: center;
+    font-size: 3rem;
+}
+.cskh .like-dis .l-d .icon i{
+    margin: 0 20px;
+    color: rgba(0, 0, 0, 0.247);
+    cursor: pointer;
+}
+.cskh .like-dis .l-d .icon .like:hover{
+    color: #ee6d89;
+}
+.cskh .like-dis .l-d .icon .dis:hover{
+    color: #d50000;
+}
